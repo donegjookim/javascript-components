@@ -1,14 +1,30 @@
-.creatable-container {
+:root {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#creatable-container {
   align-items: center;
-  border: solid black 1px;
-  border-color: rgba(0, 0, 0, 0.25);
+  border: solid rgba(0, 0, 0, 0.25) 1px;
   border-radius: 4px;
   display: flex;
   padding: 5px;
-  width: 200px;
+  width: 95%;
 }
 
-.creatable-input {
+#creatable-container .close-icon {
+  cursor: pointer;
+  margin-left: 2px;
+  padding: 0 2px;
+}
+
+#creatable-container .label {
+  border: solid rgba(0, 0, 0, 0.25) 1px;
+  padding: 0 5px;
+  margin: 0 2px;
+}
+
+#creatable-input {
   border: none;
   outline: none;
   width: 100%;
