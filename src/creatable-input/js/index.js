@@ -18,7 +18,7 @@ const createLabel = (value) => {
   labelContainer.append(span);
 };
 
-input.addEventListener("keypress", function (event) {
+input.addEventListener("keydown", function (event) {
   if (
     event.key === "Enter" &&
     this.value &&
@@ -27,6 +27,11 @@ input.addEventListener("keypress", function (event) {
     state.values.push(this.value);
     createLabel(this.value);
     this.value = "";
+  } else if (event.key === "Backspace" && state.values.length) {
+    state.values.pop();
+    labelContainer.removeChild(
+      labelContainer.childNodes[labelContainer.childNodes.length - 1]
+    );
   }
 });
 
