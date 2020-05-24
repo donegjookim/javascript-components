@@ -1,0 +1,15 @@
+.creatable-container {
+  align-items: center;
+  border: solid black 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  display: flex;
+  padding: 5px;
+  width: 200px;
+}
+
+.creatable-input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
